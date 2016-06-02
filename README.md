@@ -8,11 +8,11 @@ Evolved from [react-antd-admin](https://github.com/fireyy/react-antd-admin), the
 
 state is maintained by reflux
 
-####2. Complement ui
+####2. Complement UI
 
 add more ui: login form / register form / menu / multiple tags / list / pagination / form / form validation ...
 
-##Special coding conventions / Advices
+##Special coding conventions / Advices about Reflux
 
 I come up with a coding conventions:
 
@@ -28,7 +28,7 @@ Don't write the logic code in Action by using [`Actions.load.listen(() => { ... 
 
 Don't keep everything in a single Store, different usages lead to different Action and Store.
 
-One Store responses to one Action. 
+One Store responses to one Action.
 
 Keep it simple, small, clean and effective.
 
@@ -50,7 +50,7 @@ UserActions.login(data.user, data.password) // update Store's state
 ####5. Component care about part of Store's state
 use [reflux-partial](https://github.com/shigebeyond/reflux-partial) to connect part of state from Store to Component.
 
-## Features
+## Quote
 
 - [react](https://facebook.github.io/react/)
 - [reflux](https://github.com/reflux/refluxjs)
@@ -99,7 +99,7 @@ Store 是一个监听Action的处理器, 做所有的业务处理, 例如发送�
 
 请不要将所有东西都放到一个Store中, 不同的用途请给出不同 Action 和 Store.
 
-一个 Store 对一个 Action 负责. 
+一个 Store 对一个 Action 负责.
 
 请让他保持简单, 短小, 清爽与有效.
 
@@ -140,5 +140,3 @@ $ cd React-Reflux-Ant.Design-demo
 $ npm install
 $ npm start
 ```
-
-
